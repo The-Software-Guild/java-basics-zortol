@@ -18,11 +18,13 @@ public class DogGenetics {
 
         int[] breedPercent = new int[5];
         int numberToDec = 100;
-        for(int i =0; i < breedPercent.length; i++){
+        for(int i =0; i < breedPercent.length - 1; i++){
             int in = rand.nextInt(numberToDec) + 1;
             breedPercent[i] = in;
             numberToDec -= in;
         }
+
+        breedPercent[4] = numberToDec;
         System.out.println(breedPercent[0] + "% St. Bernard");
         System.out.println(breedPercent[1] + "% Chihuahua");
         System.out.println(breedPercent[2] + "% Dramatic RedNosed Asian Pug");

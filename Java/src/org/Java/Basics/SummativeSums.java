@@ -8,7 +8,6 @@ public class SummativeSums {
         for (int x : arr)
             total += x;
 
-
         return total;
     }
 
